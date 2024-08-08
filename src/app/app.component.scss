@@ -1,0 +1,22 @@
+img {
+    max-width: 20px;
+}
+
+a {
+    text-decoration: none;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    column-gap: 5px;
+}
+
+pre {
+    background-color: black;
+    padding: 9px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 8px;
+    font-size: 20px;
+    border-left: 8px solid green;
+    width: fit-content;
+}
