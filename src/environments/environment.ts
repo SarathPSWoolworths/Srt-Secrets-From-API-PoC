@@ -6,4 +6,4 @@ export function setEnvValues(secret: Environment) {
 export function getEnvValues() {
   return environment;
 }
-export const initilaizeProxyServiceURL: string = "https://proxyfunction-7uax65bu.ts.gateway.dev/sendsecvalue?secName=BSB_VERIFICATION_KEY&key=AIzaSyCNWH8d0EBj4LEH-hMyCIfhfe25pdtSLqE";
+export const initilaizeProxyServiceURL: string = "https://api.github.com/users/sarathpswoolworths";

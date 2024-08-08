@@ -42,7 +42,7 @@ function initializeAppFactory(httpClient: HttpClient): () => Observable<any> {
           token: '123456789'
         };
         env.setEnvValues(envDetails)
-        console.log('the secret is ', user?.secret);
+        console.log('the api response is ', user);
         console.log('the env values are ', env.getEnvValues());
       })
     );
