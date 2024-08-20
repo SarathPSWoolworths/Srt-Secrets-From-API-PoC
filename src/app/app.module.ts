@@ -30,19 +30,8 @@ function initializeAppFactory(httpClient: HttpClient): () => Observable<any> {
   return () => httpClient.get(env.initilaizeProxyServiceURL)
     .pipe(
       tap((user: any) => {
-        let envDetails: Environment = {
-          production: false,
-          key: 'abcd-efgh.ijk.lmnopqrstuvw.xyz',
-          SomeApp: {
-            id: '9876543210000000000000000000000000',
-            environment: 'master',
-            url: 'https://github.com/SarathPSWoolworths/Srt-Secrets-From-API-PoC/',
-            token: 'zyx.wvutsrqponml.kji.hgfe-dcba',
-          },
-          token: '123456789'
-        };
-        env.setEnvValues(envDetails)
-        console.log('the api response is ', user);
+        let envDetails: Environment = user;
+        env.setEnvValues(envDetails);
         console.log('the env values are ', env.getEnvValues());
       })
     );
